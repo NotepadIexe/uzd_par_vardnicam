@@ -250,3 +250,5 @@ dati = [
 		"year_published": "2011"
 	}
 ]
+for x in dati:
+	print(x["id"],x["name"],x["author"],x["genre"],x["pages"],x["price"],x["quantity"],x["year_published"])
