@@ -44,3 +44,12 @@ def gaug(dati):
 gaug(dati)
 # 6. Izveiodt ievad datu kopiju, un visos ierakstos, kur autors nav norādīts, ierakstīt "Nav norādīts"
 dati2 = dati.copy()
+for x in dati2:
+    if x["author"] == "":
+        print(x["name"],"Autors nav noradits")
+# 7. Izvadīt autorus alfabētiskā secībā, lai tie neatkārtotos
+sar=[]
+for x in dati:
+    sar.append(x["author"])
+sar.sort()
+print(sar)
