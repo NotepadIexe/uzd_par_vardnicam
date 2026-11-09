@@ -50,6 +50,20 @@ for x in dati2:
 # 7. Izvadīt autorus alfabētiskā secībā, lai tie neatkārtotos
 sar=[]
 for x in dati:
-    sar.append(x["author"])
-sar.sort()
+    if x not in sar:
+    	sar.append(x["author"])
 print(sar)
+# 8. Izvadīt autoru, kuram pieder visvairāk grāmatu
+i = 0
+g: str = None
+for x in dati:
+    o = 0
+    for y in dati:
+        if x["author"] == y["author"]:
+            o += 1
+    if o > i:
+        g = x["author"]
+    else:
+        continue
+    i = o
+print(g)
