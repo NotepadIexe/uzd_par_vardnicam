@@ -1,4 +1,4 @@
-
+from d import dati
 # 1. Izvadīt visus datus par grāmatām, katru izvadot jaunā rindā
 for x in dati:
 	print(x["name"],x["pages"],x["year_published"])
@@ -37,3 +37,8 @@ def garakais_nosaukums(dati):
             o = x["name"]
     print(o)
 garakais_nosaukums(dati)
+# 5.2. Izmantojot funkciju, uz ekrāna izvadīt grāmatas autoru un gadu
+def gaug(dati):
+    for x in dati:
+        print(x["name"],x["author"])
+gaug(dati)
