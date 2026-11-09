@@ -42,3 +42,5 @@ def gaug(dati):
     for x in dati:
         print(x["name"],x["author"])
 gaug(dati)
+# 6. Izveiodt ievad datu kopiju, un visos ierakstos, kur autors nav norādīts, ierakstīt "Nav norādīts"
+dati2 = dati.copy()
